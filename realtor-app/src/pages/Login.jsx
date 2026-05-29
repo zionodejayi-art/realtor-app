@@ -9,7 +9,10 @@ import {
 signInWithEmailAndPassword
 } from "firebase/auth";
 
-import { auth } from "../firebase";
+import { getAuth } from "firebase/auth";
+import { app } from "../firebase";
+
+const auth = getAuth(app);
 
 function Login(){
 

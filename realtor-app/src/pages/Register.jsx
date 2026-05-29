@@ -4,8 +4,10 @@ import { Link,useNavigate } from "react-router-dom";
 import {
 createUserWithEmailAndPassword
 } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import { app } from "../firebase";
 
-import { auth } from "../firebase";
+const auth = getAuth(app);
 
 function Register(){
 
