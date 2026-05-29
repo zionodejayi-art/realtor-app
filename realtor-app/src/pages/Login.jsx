@@ -8,11 +8,7 @@ useNavigate
 import {
 signInWithEmailAndPassword
 } from "firebase/auth";
-
-import { getAuth } from "firebase/auth";
-import { app } from "../firebase";
-
-const auth = getAuth(app);
+import { auth } from "../firebase";
 
 function Login(){
 
